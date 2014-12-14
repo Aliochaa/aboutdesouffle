@@ -130,16 +130,20 @@
 			<!-- ANNEES -->
 			<div id="annees">
 				<ul>
-		         	<li class="<?php echo (in_array("2003", $jesuisou) ? "data_ok" : "data_no" ); ?>">2003</li>
-		         	<li class="<?php echo (in_array("2004", $jesuisou) ? "data_ok" : "data_no" ); ?>">2004</li>
-		         	<li class="<?php echo (in_array("2005", $jesuisou) ? "data_ok" : "data_no" ); ?>">2005</li>
-		         	<li class="<?php echo (in_array("2006", $jesuisou) ? "data_ok" : "data_no" ); ?>">2006</li>
-		         	<li class="<?php echo (in_array("2007", $jesuisou) ? "data_ok" : "data_no" ); ?>">2007</li>
-		         	<li class="<?php echo (in_array("2008", $jesuisou) ? "data_ok" : "data_no" ); ?>">2008</li>
-		         	<li class="<?php echo (in_array("2009", $jesuisou) ? "data_ok" : "data_no" ); ?>">2009</li>
-		         	<li class="<?php echo (in_array("2010", $jesuisou) ? "data_ok" : "data_no" ); ?>">2010</li>
-		         	<li class="<?php echo (in_array("2011", $jesuisou) ? "data_ok" : "data_no" ); ?>">2011</li>
-		         	<li class="<?php echo (in_array("2012", $jesuisou) ? "data_ok" : "data_no" ); ?> select">2012</li>		         	
+					<script>
+					for(i=2003;i<2014;i++) { 
+						var select = '';
+						if(i==2012) {
+							select = " select";
+						}
+						if(jesuisou.indexOf(i)) {
+					    	document.write("<li class='data_ok'"+select+">"+i+"</li>");
+					    }
+					    else {
+					    	document.write("<li class='data_no'"+select+">"+i+"</li>");
+					    }
+					}
+					</script>	         	
      			</ul>
          	</div>
          	<!-- FIN ANNEES -->
