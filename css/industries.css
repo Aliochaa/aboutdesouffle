@@ -1,0 +1,261 @@
+/* =======================================================================
+================================ BLOC LEGENDES =================================
+==========================================================================*/
+#industries #legende {
+	width: 200px; height: 480px;
+	left: 3%;
+	top: 10%;
+	background-color: rgba(255,255,255,0.7);
+	font-size: 13px;
+	color:#212729;
+	list-style: none;
+	font-family: 'questrial';
+	box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-o-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	position: absolute;
+	z-index: 999;	
+	}
+
+#industries .picto {
+	margin-left: 20px;
+	margin-top: 5px;
+	
+
+}
+/*MOTIFS*/
+
+#industries #industry{
+	margin-left: 20px;
+	font-size: 13px;
+
+}
+
+#industries #industry li{ float: left; width:80%; line-height: 25px;}
+#industries #industry li:first-child{ margin-top: 10px;}
+
+
+
+#industries #industry li img {width: 25px; height: 28px; float: right;}
+
+/*FILTRE*/
+
+#industries .titre_legende{
+	font-size: 16px;
+	font-family: 'questrial';
+	color: #ed4a3d;
+	float: left;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+#industries #filtre{
+	margin-top: 5px;
+	float: left;
+	width: 100%;
+	font-size: 13px;
+}
+
+#industries #filtre li{	
+	line-height: 25px;	
+	padding: 5px 5px 5px 20px;
+	width: auto;
+}
+
+#industries #filtre li {
+	cursor: pointer;
+	color: #212729;
+}
+
+#industries #filtre li:hover{
+	background-color: #f17257;
+	box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8) inset;
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-moz-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-o-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+
+}
+
+#industries .filtre_actif{
+	background-color: #ed4a3d;
+	box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8) inset;
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-moz-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-o-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+}
+
+#industries #filtre li.filtre_actif  {color: white;}
+
+
+/* =======================================================================
+================================ BLOC INFOS =================================
+==========================================================================*/
+
+#industries #infos {
+	width: 250px; height: 320px;
+	right: 3%;
+	top: 10%;
+
+	background-color: rgba(255,255,255,0.7);
+	font-size: 12px;
+	color:#212729;
+	list-style: none;
+	font-family: 'questrial';
+	font-weight: normal;
+	box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-o-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	position: absolute;
+	z-index: 999;
+	}
+#industries #infos h2 {
+	font-size: 16px;
+	font-family: 'questrial';
+	color: #f2433b;
+	margin-bottom: 10px;
+	padding: 15px 20px 0 20px;
+}
+#industries #infos p {
+	font-size: 13px;
+	font-family: 'questrial';
+	line-height: 16px;
+	color: #1b2324;
+	padding: 0 20px 10px 20px;
+	width: 250px;
+	text-align: left;
+}
+
+#industries .img_video {
+	padding: 0 20px 0px 20px;
+	width: 210px;
+	margin-top: 15px;
+}
+
+#industries .video_infos{
+	float: left;
+	padding: 0 20px 0px 20px;
+	margin-top: 10px;
+	position: absolute;
+	width: 210px;
+	height: 119px;
+}
+
+#industries .popup-vimeo{
+	position:absolute;
+	margin-top: 30px;
+	z-index: 9999;
+	width: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -20px;
+}
+
+
+#industries #map-container{
+	-webkit-transition: margin-top 600ms ease;
+-moz-transition: margin-top 600ms ease;
+transition: margin-top 600ms ease;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+}
+
+#industries #map {
+	width: 100%;
+	height: 88%;	
+	z-index: 1;
+	-webkit-transition: margin-top 600ms ease;
+-moz-transition: margin-top 600ms ease;
+transition: margin-top 600ms ease;
+}
+
+
+#industries .titre {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px
+}
+
+#industries .titre h4 {
+    margin: 0 0 5px;
+    color: #777;
+} 
+
+#industries path {
+	transition: all 0.2s ease;
+}
+
+
+
+#aide{
+bottom: 12%;
+position: absolute;
+z-index: 1000;
+width: auto;
+left: 6%;
+}
+
+
+#aide_industries{
+width: 280px;
+/* position: absolute; */
+background: white;
+color: black;
+font-size: 12px;
+font-family: "ClearSans";
+height: 360px;
+bottom: 12%;
+left: 5%;
+position: absolute;
+z-index: 999;
+display: none;
+}
+
+#aide_industries h2{
+font-family: "Questrial";
+font-size: 14px;
+color: #f2433b;
+margin-top: 40px;
+float: left;
+margin-left: 40px;
+}
+
+#aide_industries p{
+font-family: "Questrial";
+font-size: 14px;
+color: black;
+width: 180px;
+height: 180px;
+margin: 10px 40px 40px 40px;
+float: left;
+line-height: 1.2em;
+}
+
+
+
+#aide_cercle{
+position: absolute;
+top: 50%;
+width: 60%;
+left: 20%;
+}
+
+#fermer{
+	top: 3%;
+	position: absolute;
+	right: 3%;
+
+}
+
+.close{
+right: 3%;
+position: absolute;
+top: 3%;
+}

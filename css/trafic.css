@@ -1,0 +1,221 @@
+/* =======================================================================
+================================ MAP =====================================
+==========================================================================*/	
+
+#trafic #map-container{
+	-webkit-transition: margin-top 600ms ease;
+-moz-transition: margin-top 600ms ease;
+transition: margin-top 600ms ease;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+}
+
+#trafic #map {
+	width: 100%;
+	height: 88%;	
+	z-index: 1;
+	-webkit-transition: margin-top 600ms ease;
+-moz-transition: margin-top 600ms ease;
+transition: margin-top 600ms ease;
+}
+
+
+#trafic .titre {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px
+}
+
+#trafic .titre h4 {
+    margin: 0 0 5px;
+    color: #777;
+} 
+
+#trafic path {
+	transition: all 0.2s ease;
+}
+
+
+
+
+/* =======================================================================
+==========================================================================
+================================ MAIN =================================
+==========================================================================
+==========================================================================*/
+#trafic #main {
+	width:100%;
+	height: 100%;
+	top:60px;
+	position: absolute;
+	z-index: 5;
+
+}
+
+
+/* =======================================================================
+================================ BLOC LEGENDES =================================
+==========================================================================*/
+#trafic #legende {
+	width: 200px; height: 445px;
+	left: 3%;
+	top: 10%;
+	background-color: rgba(255,255,255,0.7);
+	
+	color:#212729;
+	list-style: none;
+	font-family: 'questrial';
+	font-size: 13px;
+	box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-o-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	position: absolute;
+	z-index: 999;	
+	}
+
+#trafic .picto {
+	margin-left: 26px;
+	margin-top: 15px;
+	width: 30%;
+}
+
+#trafic #legend_ara_trafic {
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+}
+
+/*FILTRE*/
+
+#trafic .titre_legende{
+	font-size: 16px;
+	font-family: 'questrial';
+	color: #ed4a3d;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+	position: absolute;
+}
+
+#trafic #filtre{
+float: left;
+width: 100%;
+margin-top: 50px;
+}
+
+#trafic #filtre li{	
+	line-height: 25px;	
+	padding: 10px 5px 5px 20px;
+	width: auto;
+}
+
+#trafic #filtre li {
+	cursor: pointer;
+	color: #212729;
+}
+
+#trafic #filtre li:hover{
+	background-color: #f17257;
+	box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8) inset;
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-moz-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-o-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	color: white;
+
+}
+
+#trafic .filtre_actif{
+	background-color: #ed4a3d;
+	box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8) inset;
+	-webkit-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-moz-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+	-o-box-shadow: 0px 5px 5px -5px rgba(158,34,37,0.8)inset;
+}
+
+#trafic #filtre li.filtre_actif  {color: white;}
+
+
+/* =======================================================================
+================================ BLOC INFOS =================================
+==========================================================================*/
+
+#trafic #infos {
+	width: 250px; height: 330px;
+	right: 3%;
+	top: 10%;
+
+	background-color: rgba(255,255,255,0.7);
+	font-size: 12px;
+	color:#212729;
+	list-style: none;
+	font-family: 'questrial';
+	font-weight: normal;
+	box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-webkit-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-moz-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	-o-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+	position: absolute;
+	z-index: 999;
+	}
+#trafic #infos h2 {
+	font-size: 16px;
+	font-family: 'questrial';
+	color: #f2433b;
+	margin-bottom: 10px;
+	padding: 15px 20px 0 20px;
+}
+#trafic #infos p {
+	font-size: 13px;
+	font-family: 'questrial';
+	line-height: 16px;
+	color: #1b2324;
+	padding: 0 20px 10px 20px;
+	width: 250px;
+	text-align: left;
+}
+
+#trafic .img_video {
+	padding: 0 20px 0px 20px;
+	width: 210px;
+	margin-top: 15px;
+}
+
+#trafic .video_infos{
+	float: left;
+	padding: 0 20px 0px 20px;
+	margin-top: 10px;
+	position: absolute;
+	width: 210px;
+	height: 119px;
+}
+
+#trafic .popup-vimeo{
+	position:absolute;
+	margin-top: 30px;
+	z-index: 9999;
+	width: 80px;
+	left: 50%;
+	top: 50%;
+	margin-left: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

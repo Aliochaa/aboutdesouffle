@@ -1,0 +1,4 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /dns/in/olympe/aboutdesouffle/webdoc/.htpasswd 
+require valid-user

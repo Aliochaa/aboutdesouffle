@@ -1,0 +1,138 @@
+/*Dataviz ATMO*/
+
+/* @FONT-FACE */
+@font-face {
+    font-family: 'ClearSans';
+    src: url('../fonts/clear-sans/ClearSans-Regular-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Regular-webfont.svg#clear_sansregular') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Bold';
+    src: url('../fonts/clear-sans/ClearSans-Bold-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Bold-webfont.svg#clear_sansbold') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),         
+         url('../fonts/clear-sans/ClearSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Bold-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Light';
+    src: url('../fonts/clear-sans/ClearSans-Light-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Light-webfont.svg#clear_sans_lightregular') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Light-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Light-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    opacity: 0.999;
+
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Medium';
+    src: url('../fonts/clear-sans/ClearSans-Medium-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Medium-webfont.svg#clear_sans_mediumregular') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Medium-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Medium-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ClearSans-Regular';
+    src: url('../fonts/clear-sans/ClearSans-Regular-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Regular-webfont.svg#clear_sans_mediumregular') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#dataviz_atmo {
+font-family:'ClearSans-Light';
+   
+}
+
+#dataviz_atmo .day {
+  fill: #fff;
+  stroke: #ccc;
+}
+
+
+
+#dataviz_atmo .month {
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+#dataviz_atmo .dataviz .ATMO1{fill:#006837}
+#dataviz_atmo .dataviz .ATMO2{fill:#1a9850}
+#dataviz_atmo .dataviz .ATMO3{fill:#66bd63}
+#dataviz_atmo .dataviz .ATMO4{fill:#a6d96a}
+#dataviz_atmo .dataviz .ATMO5{fill:#d9ef8b}
+#dataviz_atmo .dataviz .ATMO6{fill:#fee08b}
+#dataviz_atmo .dataviz .ATMO7{fill:#fdae61}
+#dataviz_atmo .dataviz .ATMO8{fill:#f46d43}
+#dataviz_atmo .dataviz .ATMO9{fill:#d73027}
+#dataviz_atmo .dataviz .ATMO10{fill:#a50026}
+
+#dataviz_atmo .dataviz .PM10{fill:red}
+#dataviz_atmo .dataviz .SO2{fill:blue}
+#dataviz_atmo .dataviz .NO2{fill:green}
+#dataviz_atmo .dataviz .O3{fill:yellow}
+
+#dataviz_atmo .legend {
+    width: 150px;
+    height: 20px;
+}
+
+#dataviz_atmo #legend {
+    display:none;
+}
+#dataviz_atmo #legend .PM10{background-color:red}
+#dataviz_atmo #legend .SO2{background-color:blue}
+#dataviz_atmo #legend .NO2{background-color:green}
+#dataviz_atmo #legend .O3{background-color:yellow}
+
+#dataviz_atmo .dataviz .day {
+    transition: fill 200ms ease;
+}
+
+#dataviz_atmo #side {
+    position: fixed;
+    top:80px;
+    right: 80px;
+}
+
+#dataviz_atmo .custom-tooltip-styling {
+    font-size: 12px;
+}
+#dataviz_atmo .custom-tooltip-styling table {
+    font-size: 9px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+

@@ -1,0 +1,8 @@
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1600px) {
+
+#indice_day{
+	margin-top: 100px;
+}
+}

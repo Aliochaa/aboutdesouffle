@@ -1,0 +1,908 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    overflow: hidden;
+    font-weight: 400;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* @FONT-FACE */
+@font-face {
+    font-family: 'ClearSans';
+    src: url('../fonts/clear-sans/ClearSans-Regular-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Regular-webfont.svg#clear_sansregular') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Regular-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Bold';
+    src: url('../fonts/clear-sans/ClearSans-Bold-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Bold-webfont.svg#clear_sansbold') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),         
+         url('../fonts/clear-sans/ClearSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Bold-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Light';
+    src: url('../fonts/clear-sans/ClearSans-Light-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Light-webfont.svg#clear_sans_lightregular') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Light-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Light-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+    opacity: 0.999;
+
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Medium';
+    src: url('../fonts/clear-sans/ClearSans-Medium-webfont.eot');
+    src: url('../fonts/clear-sans/ClearSans-Medium-webfont.svg#clear_sans_mediumregular') format('svg'),
+         url('../fonts/clear-sans/ClearSans-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Medium-webfont.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Medium-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('../fonts/Questrial-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =======================================================================
+================================ WRAPPER =================================
+==========================================================================*/
+#wrapper {
+    margin: auto;
+    width:100%; height:100%;    
+    
+    overflow: hidden;
+    
+}
+/* =======================================================================
+==========================================================================
+================================ MAIN =================================
+==========================================================================
+==========================================================================*/
+#main {
+    width:100%;
+    height: 100%;
+    top:60px;
+    position: absolute;
+    z-index: 5;
+
+}
+/* =======================================================================
+================================ HEADER =================================
+==========================================================================*/    
+#header {
+    width: 100%; height: 60px;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    position: absolute;
+    z-index: 200;
+}
+
+#header  a{
+    left: 3%;
+    float: left;
+    margin-left: 3%;
+}
+
+#logo {
+    width: auto; height: 40px;
+    float: left;
+    margin-top: 7px;    
+    left: 10%;
+}
+
+#menu {
+    width: auto;
+    height: 46px;
+    font-size: 48px;
+    font-family: 'ClearSans-Light';
+    float: left;
+    margin-left: 18%;
+    left: 50%;
+
+}
+
+#rubrique {
+    height: 46px;
+    left: 30%;
+    list-style: none;
+    float: left;
+    position: absolute;
+    z-index: 999;
+    
+}
+
+#rubrique li:first-child{margin-left: 0;padding-top:2px; }
+#rubrique li:first-child :hover{margin-left: 0;border-top:5px solid #fff;}
+#rubrique li{ float: left; width: auto; margin-left: 45px;}
+
+#rubrique li#rubrique1 {font-family: 'ClearSans-Light';opacity: 0.999;margin-left: 250px;}
+#rubrique li#filet {color: #484748;padding-top: 14px;font-size: 18px;}
+#rubrique li#rubrique2 {font-family: 'ClearSans-Bold';opacity: 0.999;}
+#rubrique li#rubrique3 {font-family: 'ClearSans-Bold';opacity: 0.999;}
+#rubrique li#rubrique1 a.ici{border-top:5px solid #f2433b;font-family: 'ClearSans-Bold';opacity: 0.999;}
+#rubrique li#rubrique2 a.ici{border-top:5px solid #f2433b;font-family: 'ClearSans-Bold';opacity: 0.999;}
+#rubrique li#rubrique3 a.ici{border-top:5px solid #f2433b;font-family: 'ClearSans-Bold';opacity: 0.999;}
+#rubrique li#rubrique4 a.ici{border-top:5px solid #f2433b;font-family: 'ClearSans-Bold';opacity: 0.999;}
+#rubrique li#rubrique4 {font-family: 'ClearSans-Bold';opacity: 0.999;}
+
+#rubrique li a{
+    width: 100%;
+    height: 24px;
+    padding-top: 11px;
+    display: block;
+    float: left;
+    text-align: center; line-height: 24px; color: #484748;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#rubrique li a:hover{color: #ef7e79;border-top:5px solid #ef7e79;padding-top: 6px;}
+
+#rubrique li a.ici {color: #f2433b; padding-top: 8px;}
+/* =======================================================================
+================================ BLOC INDICE ATMO ==========================
+==========================================================================*/
+#atmo_day {
+    width: 250px; height: 130px;
+    
+
+    background-color: rgba(9,13,21,0.75);
+    font-size: 12px;
+    color:#212729;
+    list-style: none;
+    font-family: 'questrial';
+    box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    -webkit-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    -moz-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    -o-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    position: absolute;
+    z-index: 299;
+    bottom: 10%;
+    right: 3%;
+
+    
+    }
+#atmo_day h2 {
+    font-size: 16px;
+    font-family: 'questrial';
+    color: white;
+    margin-bottom: 2px;
+    padding: 8px 20px 0 20px;
+}
+#atmo_day h6 {
+    font-size: 13px;
+    font-family: 'ClearSans-Light';
+    font-style: italic;
+    color: #d6c49b;
+    padding: 0px 20px 0 20px;
+}
+#carre_atmo {
+    width: 40px; height: 40px;
+    margin-left: 20px;
+    box-shadow: 0px 3px 3px -3px rgba(9,13,21,0.75);
+    -webkit-box-shadow: 0px 3px 3px -3px rgba(9,13,21,0.75);
+    -moz-box-shadow: 0px 3px 3px -3px rgba(9,13,21,0.75);
+    -o-box-shadow: 0px 3px 3px -3px rgba(9,13,21,0.75);
+    padding:10px; 
+    
+}
+#carre_atmo h1 {
+    font-size: 30px;
+    font-family: 'ClearSans-Light';
+    color: white;
+    text-align: center;
+}
+#carre_atmo h6 {
+    font-size: 13px;
+    font-family: 'ClearSans-Light';
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+#carre_atmo hr { 
+  border: none;
+  background-color: white;
+  height: 1px;
+  width: 40%;
+  align: center;
+  margin-top: -3px;
+  margin-bottom: 5px;
+}
+.previsions {
+    font-size: 10px;
+    font-family: 'ClearSans-Light';
+    font-style: italic;
+    margin-left: 70px;
+    margin-top: -40px;
+    text-decoration : underline;
+    opacity: 0.999;
+
+    
+}
+#atmo_day .previsions a{
+    color: #d6c49b;
+}
+
+#indice_day p.jour{
+font-size: 23px;
+font-family: 'questrial';
+margin-bottom: 15px;
+text-align: center;
+}
+#indice_day p.titremiddle {
+font-size: 24px;
+font-family: 'ClearSans-Bold';
+float: left;
+margin-top: 55px;
+color: white;
+margin-left: 30px;
+}
+
+.jour {
+    font-size: 20px;
+    font-family: 'questrial';
+    color: white;
+}
+/* =======================================================================
+================================ TIMELINE ==========================
+==========================================================================*/
+#timeline {
+    width: 100%; 
+    height: 46px;   
+    float: left;    
+    box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    -webkit-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    -moz-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    -o-box-shadow: 0px 3px 3px -3px rgba(195,196,196,0.9);
+    bottom:0;
+    position: absolute;
+    z-index: 9999;
+    background: white;  
+    text-align: center;
+
+}
+#annees {
+    height: 46px; width:650px;
+    left:5%;
+    margin-left: 25%;
+    list-style: none;
+    float: left;
+    position: absolute;
+}
+#annees li{float: left; width: auto; margin-left: 30px; font-family: 'Questrial'; font-size: 12px; cursor: pointer;}
+
+#annees li {
+    width: 30px;
+    height: 35px;
+    display: block;
+    float: left;
+    text-align: center; line-height: 46px;
+    text-decoration: none;
+    color: #484748; 
+}
+#annees li.select {color: #f2433b; border-bottom:5px solid #f2433b; padding-bottom: 6px; }
+
+
+#credit {
+    height: 46px; width: 180px; 
+    list-style: none;
+    float: right;   
+    font-family: 'ClearSans-Light';
+    color: #484748;
+    font-size: 12px;
+    
+    right: 0;
+    margin-right: 5%;
+    
+}
+#credit li{
+    float: left; 
+    margin-left: 15px;  
+    font-family: 'Questrial'; 
+    color: #484748; 
+    font-size: 12px; 
+    padding-top: 11px; 
+    text-align: center; 
+    line-height: 24px;
+    display: inline;}
+
+#credit li a{
+    color: #484748;
+    text-decoration: none;
+}
+
+
+#annees li.data_ok{
+   color:#484748;
+}
+
+#annees li.data_no{
+    color:#CCC;
+    cursor: default;
+  
+}
+/* =======================================================================
+================================ POPUP ==========================
+==========================================================================*/
+
+
+/* 
+
+====== Zoom-out effect ======
+
+*/
+.mfp-zoom-out {
+  
+  /* start state */
+  .mfp-with-anim {
+    opacity: 0;
+    transition: all 0.3s ease-in-out; 
+    transform: scale(1.3); 
+  }
+  
+  &.mfp-bg {
+    opacity: 0;
+      transition: all 0.3s ease-out;
+  }
+  
+  /* animate in */
+  &.mfp-ready {
+    .mfp-with-anim {
+      opacity: 1;
+      transform: scale(1); 
+    }
+    &.mfp-bg {
+      opacity: 0.8;
+    }
+  }
+  
+  /* animate out */
+  &.mfp-removing {
+    
+    .mfp-with-anim {
+      transform: scale(1.3); 
+      opacity: 0;
+    }
+    &.mfp-bg {
+      opacity: 0;
+    }
+    
+  }
+  
+}
+
+.popup-modal-dismiss{
+    
+    position: fixed;
+    left: 90%;
+    top: 5%;
+    
+}
+
+/* =======================================================================
+================================ POPUP CONTENU ==========================
+==========================================================================*/
+
+/*#texte_previsions {
+                width: 500px;           
+                margin-bottom: 15px;
+                margin-top: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                float: left;
+                color: white;
+
+            }*/
+
+/*            #indice_day{
+                width: 80%;
+                height: auto;
+                border: 1px solid red;
+                float: left;
+                left: 20%;
+                top: 10%;
+                margin-left: -180px;
+                position: absolute;
+            }
+
+            .bloc_day {
+            width: 500px;
+            float: left;
+            border: 1px solid black;
+            text-align: center;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: white;
+            }
+            .date {
+            font-weight: bold;
+            font-family: "clearSans-Bold";
+            font-size: 24px;
+            }
+            .ATMO {
+                height: 100px;
+                width: 500px;
+                padding-top: 100px;
+                padding-bottom: 100px;
+                font-size: 90px;
+                font-family: "questrial";
+                margin-top: 20px;
+            }
+            .details td {
+                width: 100px;
+                text-align: center;
+            }
+*/
+#indice_day{
+width: 900px;
+height: 670px;
+margin-right: auto;
+margin-left: auto;
+margin-top: 20px;
+}
+
+.bloc_day {
+width: 280px;
+float: left;
+text-align: center;
+margin-right: 5px;
+color: white;
+margin-left: 12px;
+            }
+.date {
+font-weight: bold;
+font-family: "clearSans-Bold";
+font-size: 24px;
+}
+.ATMO {
+width: 277px;
+padding-top: 50px;
+padding-bottom: 25px;
+font-size: 90px;
+font-family: "questrial";
+margin-top: 20px;
+float: left;
+            }
+
+
+.details{
+border-collapse: collapse;
+border-spacing: 0;
+float: left;
+margin-top: 3px;
+}
+
+.details td {
+text-align: center;
+margin-top: 0px;
+float: left;
+margin-left: 3px;
+            }
+.details td:first-child {
+margin-left: 0px;
+
+            }
+
+
+td span {
+font-size: 30px;
+padding: 15px 5px 15px 5px;
+width: 57px;
+float: left;
+font-family: "Questrial";
+}
+
+button#playATMO {
+border: none;
+background: black;
+color: white;
+padding: 7px 5px 4px 10px;
+width: 130px;
+height: 30px;
+border: 1px solid #666;
+text-align: left;
+font-family: "ClearSans-Bold";
+font-size: 13px;
+position: absolute;
+left: 69%;
+}
+
+#playATMO img{
+    float: right;
+}
+
+div#side {
+float: left;
+margin-top: 15px;
+}
+
+select#dataviz_atmo_select {
+border: 0 !important;
+-webkit-appearance: none;
+-moz-appearance: none;
+background-color: white;
+background-position: 80px 8px;
+width: 115px;
+height: 30px;
+text-indent: 0.01px;
+text-overflow: "";
+cursor: pointer;
+border-radius: 0;
+color: black;
+text-align: left;
+padding-left: 10px;
+font-family:"Questrial";
+font-size: 16px;
+background-image: url(../img/lecture_annees.png);
+background-position: 60% 100%;
+padding-top: 3px;
+float: right;
+margin-top: 45px;
+margin-right: 80px;
+}
+
+select#dataviz_atmo_select option{
+border: 0 !important;
+-webkit-appearance: none;
+-moz-appearance: none;
+background-color: white;
+background-position: 80px 8px;
+width: 100px;
+height: 30px;
+text-indent: 0.01px;
+text-overflow: "";
+cursor: pointer;
+border-radius: 0;
+color: black;
+text-align: center;
+padding-left: 10px;
+font-family:"Questrial";
+font-size: 14px;
+line-height: 1.2em;
+}
+
+
+            /* =======================================================================
+================================ MAP =====================================
+==========================================================================*/    
+
+#map-container{
+    -webkit-transition: margin-top 600ms ease;
+-moz-transition: margin-top 600ms ease;
+transition: margin-top 600ms ease;
+position: absolute;
+margin-top: 60px;
+left: 0;
+height: 100%;
+width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 90%;    
+    z-index: 1;
+    -webkit-transition: margin-top 600ms ease;
+-moz-transition: margin-top 600ms ease;
+transition: margin-top 600ms ease;
+}
+
+
+.titre {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px
+}
+
+.titre h4 {
+    margin: 0 0 5px;
+    color: #777;
+} 
+
+path {
+    transition: all 0.2s ease;
+}
+
+/* =======================================================================
+================================ CSS ATMO JOUR ==========================
+==========================================================================*/
+
+
+
+/* SELECT
+*/
+
+.dropdown p {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.dropdown select {
+
+border: 0 !important;
+-webkit-appearance: none;
+-moz-appearance: none;
+background-color: white;
+background-position: 80px 8px;
+width: 130px;
+height: 30px;
+text-indent: 0.01px;
+text-overflow: "";
+cursor: pointer;
+border-radius: 0;
+color: black;
+text-align: left;
+padding-left: 10px;
+font-family: "Questrial";
+font-size: 14px;
+float: left;
+margin-left: 500px;
+padding-top: 5px;
+}
+.dropdown select option {
+
+font-family: "Questrial";
+height: 30px;
+}
+
+.leaflet-control-layers {
+bottom: 3%;
+}
+
+.leaflet-bottom{
+    bottom: 0;
+}
+
+
+#infos_pol{
+    bottom: 13%;
+    position: absolute;
+    z-index: 999;
+    width: auto;
+    left: 3%;
+}
+
+.img_pol {
+width: 80%;
+position: absolute;
+bottom: 20%;
+left: 10%;
+right: 10%;
+top: 5%;
+}
+#legend{
+    display: none;
+    position: absolute;
+    color: white;
+    font-family: 'Questrial';
+    font-size: 13px;
+    width: 500px;
+    height: 50px;
+}
+#legend p{
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#legend .red{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    float: left;
+    margin-right: 5px;
+}
+#legend .blue{
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    float: left;
+    margin-right: 5px;
+}
+#legend .green{
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    float: left;
+    margin-right: 5px;
+}
+#legend .yellow{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    float: left;
+    margin-right: 5px;
+}
+#legend-source{
+    margin-left: 20px;
+    font-size: 12px;
+    color:#999;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 15px;
+}
+
+#legende h2.legende{
+    margin-top: 15px;
+    font-size: 12px;
+    width: 100%;
+    color: black;
+    margin:0;
+    padding: 0;
+}
+
+#legend-source a{
+text-decoration: underline;
+color: #999;
+font-size: 12px;
+}
+.sourceair{
+    font-family: 'ClearSans';
+    font-size: 10px;
+    color: #f2433b;
+    float: left;
+    margin-top: 65px;
+    margin-left: 15px;
+}
+.ui-tooltip {
+    font-size: 12px;
+    font-family: 'Questrial';
+    text-align: center;
+    vertical-align: middle;
+}
+.ui-tooltip th,.ui-tooltip td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+
+/* =======================================================================
+================================ INFO BULLE ==========================
+==========================================================================*/
+
+
+.info_bulle{
+    display: none;
+  position: absolute;
+}
+
+#info_atmo{
+    position: absolute;
+    bottom: 15%;
+    right: 10%;    
+    z-index: 999;
+}
+
+#infos_bulle_atmo{
+width: 280px;
+position: absolute;
+background: white;
+color: black;
+font-size: 12px;
+font-family: "ClearSans";
+height: 360px;
+bottom: 13%;
+right: 8%;
+display: none;
+
+}
+
+#infos_bulle_atmo h2{
+font-family: "Questrial";
+font-size: 14px;
+color: #f2433b;
+margin-top: 30px;
+float: left;
+margin-left: 40px;
+}
+
+#infos_bulle_atmo p{
+font-family: "Questrial";
+font-size: 14px;
+color: black;
+width: 180px;
+height: 180px;
+margin: 40px;
+margin-top: 5px;
+margin-bottom: 5px;
+float: left;
+line-height: 1.2em;
+}
+
+.croix{
+    right: 3%;
+    top: 3%;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
