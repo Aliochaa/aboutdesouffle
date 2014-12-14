@@ -6,6 +6,9 @@ Un webdocumentaire sur la pollution atmosphérique
 Voir le teaser : http://vimeo.com/91290261
 
 ![A bout de souffle](http://julesbonnard.github.io/aboutdesouffle/img/accueil/1.jpg)
+![A bout de souffle](http://julesbonnard.github.io/aboutdesouffle/img/accueil/2.jpg)
+![A bout de souffle](http://julesbonnard.github.io/aboutdesouffle/img/accueil/3.jpg)
+![A bout de souffle](http://julesbonnard.github.io/aboutdesouffle/img/accueil/4.jpg)
 
 L'équipe
 -----------------
